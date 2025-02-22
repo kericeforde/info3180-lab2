@@ -1,0 +1,38 @@
+{% extends 'base.html' %} {% block main %}
+<div class="pcontainer">
+  <div class="profile-header">
+    <img
+      src="{{ url_for('static', filename='/img.jpg') }}"
+      alt="Profile Picture"
+    />
+    <h1>Kerice Forde</h1>
+    <p class="username">@kforde</p>
+    <p class="location">Kingston,Jamaica</p>
+    <p class="joined">{{joined}}</p>
+  </div>
+
+  <div class="profile-bottom">
+    <p class="bio">
+      I am a language enthusiast, computer scientist, and a lifelong learner. I
+      enjoy reading, gardening, and watching movies.
+    </p>
+
+    <div class="profile-status">
+      <div>
+        <h2 class="val">35</h2>
+        <p>Posts</p>
+      </div>
+      <div>
+        <h2 class="val">1456</h2>
+        <p>Followers</p>
+      </div>
+      <div>
+        <h2 class="val">367</h2>
+        <p>Following</p>
+      </div>
+    </div>
+
+    <button class="follow">Follow</button>
+  </div>
+</div>
+{% endblock %}
